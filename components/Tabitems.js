@@ -10,17 +10,18 @@ const Tabitems = ({ item }) => {
   return (
     <Link
       key={item.name}
-      // href="/section/[keyword]"
       href={item.word === "design" ? "/" : "/section/[keyword]"}
       as={`/section/${item.word}`}
     >
-      <Box minW="4rem" display="flex" alignItems="center" flexDir="column">
+      <Box
+        minW="4rem"
+        className={keyword === item.word ? "open" : ""}
+        display="flex"
+        alignItems="center"
+        flexDir="column"
+      >
         <Image src={`/${item.word}.jpg`} alt="houses" height="30" width="30" />
-        <Text
-          fontSize="xs"
-          className={keyword === item.word ? "" : "open"}
-          fontWeight="600"
-        >
+        <Text fontSize="xs" fontWeight="600">
           {item.name}
         </Text>
       </Box>
