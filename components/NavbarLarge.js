@@ -57,15 +57,28 @@ const NavbarLarge = () => {
             w="100%"
             pl="1rem"
           >
-            <Text fontSize="0.9rem" color="black" fontWeight="400">
+            <Text
+              fontSize={[null, null, "0.8rem", "0.9rem", "0.9rem"]}
+              // fontSize="0.9rem"
+              color="black"
+              fontWeight="400"
+            >
               Any where
             </Text>
             |
-            <Text fontSize="0.9rem" color="black" fontWeight="400">
+            <Text
+              fontSize={[null, null, "0.8rem", "0.9rem", "0.9rem"]}
+              color="black"
+              fontWeight="400"
+            >
               Any week
             </Text>
             |
-            <Text fontSize="0.9rem" color="gray.400" fontWeight="400">
+            <Text
+              fontSize={[null, null, "0.8rem", "0.9rem", "0.9rem"]}
+              color="gray.400"
+              fontWeight="400"
+            >
               Any guest
             </Text>
             <Box
