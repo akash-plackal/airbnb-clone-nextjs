@@ -34,7 +34,7 @@ export const getStaticPaths = () => {
       { params: { keyword: "lakes" } },
       { params: { keyword: "amazing+view" } },
       { params: { keyword: "caves" } },
-      { params: { keyword: "topical" } },
+      { params: { keyword: "tropical" } },
       { params: { keyword: "windmill" } },
       { params: { keyword: "towers" } },
       { params: { keyword: "treehouse" } },

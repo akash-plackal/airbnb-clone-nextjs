@@ -10,7 +10,7 @@ const ImageCard = ({ obj }) => {
         alt={obj.tag}
         h="20rem"
       />
-      <Box pt="1" pb="4">
+      <Box pt="2" pb="4">
         <Box display="flex" justifyContent="space-between">
           <Text fontSize="sm" color="black" fontWeight="600">
             Cape yamu , Thailand
