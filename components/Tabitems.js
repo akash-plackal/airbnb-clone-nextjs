@@ -14,13 +14,15 @@ const Tabitems = ({ item }) => {
       as={`/section/${item.word}`}
     >
       <Box
-        minW="4rem"
+        // minW="4rem"
+        minW={["4rem", "4rem", null, "6rem", "6rem"]}
         className={keyword === item.word ? "open" : ""}
         display="flex"
         alignItems="center"
         flexDir="column"
       >
         <Image src={`/${item.word}.jpg`} alt="houses" height="30" width="30" />
+        {/* height={[null, null, null, "30", "30"]} */}
         <Text fontSize="xs" fontWeight="600">
           {item.name}
         </Text>

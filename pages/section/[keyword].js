@@ -6,7 +6,10 @@ const NavSections = ({ image }) => {
     <Box
       display="flex"
       alignItems="center"
-      flexDirection="column"
+      justifyContent="space-between"
+      px="5%"
+      flexDirection={["column", "column", "row", "row", "row"]}
+      flexWrap="wrap"
       py="1.5rem"
       pt="22vh"
     >

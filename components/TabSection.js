@@ -24,7 +24,15 @@ const sectionData = [
 
 const TabSection = () => {
   return (
-    <Box display="flex" style={{ overflowX: "scroll" }}>
+    <Box
+      px="5%"
+      display="flex"
+      // alignItems={[null, null, null, "center", "center"]}
+      alignItems="center"
+      style={{ overflowX: "scroll" }}
+      h={[null, null, "5rem", "5rem", "5rem"]}
+      pt={[null, null, null, "1rem", "1rem"]}
+    >
       {sectionData.map((item) => {
         return <Tabitems key={item.name} item={item} />;
       })}
