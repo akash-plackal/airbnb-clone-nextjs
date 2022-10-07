@@ -7,7 +7,8 @@ const NavSections = ({ image }) => {
       display="flex"
       alignItems="center"
       justifyContent="space-between"
-      px="5%"
+      pl="7%"
+      pr="5%"
       flexDirection={["column", "column", "row", "row", "row"]}
       flexWrap="wrap"
       py="1.5rem"
