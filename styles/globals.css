@@ -44,7 +44,8 @@ div::-webkit-scrollbar {
 } */
 
 
-.open:focus {
-  background-color: red;
-  color: blue
+.open {
+  color: #c4c4c4;
+  font-weight: 100;
 }
+
