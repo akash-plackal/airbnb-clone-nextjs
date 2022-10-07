@@ -5,7 +5,7 @@ const ImageCard = ({ obj }) => {
     <div>
       <Img
         borderRadius="0.6rem"
-        boxSize={["89vw", "50vw", "44vw", "20vw", "20vw"]}
+        boxSize={["89vw", "50vw", "43vw", "20vw", "20vw"]}
         src={obj.largeImageURL}
         alt={obj.tag}
         h="20rem"
