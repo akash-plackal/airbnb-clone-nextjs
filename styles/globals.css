@@ -36,3 +36,15 @@ box-shadow:
 div::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+
+/* .open {
+  background-color: red;
+  color: blue
+} */
+
+
+.open:focus {
+  background-color: red;
+  color: blue
+}

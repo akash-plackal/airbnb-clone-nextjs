@@ -1,15 +1,19 @@
-import { useRouter } from "next/router";
+import { Box, Text } from "@chakra-ui/react";
+import ImageCard from "../../components/ImageCard";
 
 const NavSections = ({ image }) => {
   return (
-    <div>
-      {/* create a components for image cards */}
-
+    <Box
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+      py="1.5rem"
+      pt="22vh"
+    >
       {image.hits.map((obj) => {
-        // eslint-disable-next-line @next/next/no-img-element
-        return <img src={obj.largeImageURL} alt={obj.tag} key={obj.id} />;
+        return <ImageCard obj={obj} key={obj.id} />;
       })}
-    </div>
+    </Box>
   );
 };
 
@@ -17,8 +21,26 @@ export default NavSections;
 
 export const getStaticPaths = () => {
   return {
-    paths: [{ params: { keyword: "arctic" } }, { params: { keyword: "tree" } }],
-    fallback: false, // can also be true or 'blocking'
+    paths: [
+      { params: { keyword: "arctic" } },
+      { params: { keyword: "cabin" } },
+      { params: { keyword: "country+side" } },
+      { params: { keyword: "islands" } },
+      { params: { keyword: "technology" } },
+      { params: { keyword: "beaches" } },
+      { params: { keyword: "pools" } },
+      { params: { keyword: "parks" } },
+      { params: { keyword: "tiny+homes" } },
+      { params: { keyword: "lakes" } },
+      { params: { keyword: "amazing+view" } },
+      { params: { keyword: "caves" } },
+      { params: { keyword: "topical" } },
+      { params: { keyword: "windmill" } },
+      { params: { keyword: "towers" } },
+      { params: { keyword: "treehouse" } },
+      { params: { keyword: "desert" } },
+    ],
+    fallback: false,
   };
 };
 

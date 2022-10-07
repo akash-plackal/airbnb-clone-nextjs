@@ -5,18 +5,15 @@ import TabSection from "./TabSection";
 
 const Navbar = () => {
   return (
-    <Box border="1px" w="100%" minH="19vh">
+    <Box boxShadow="lg" w="100%" minH="19vh" position="fixed" bg="white">
       <Box
-        // border="1px"
         w="100%"
         py="4%"
-        // minH="5rem"
         display="flex"
         alignItems="center"
         justifyContent="center"
       >
         <Box
-          boxShadow="lg"
           className="shadow"
           borderRadius="2rem"
           border="1px"

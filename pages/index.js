@@ -1,13 +1,19 @@
+import ImageCard from "../components/ImageCard";
+import { Box } from "@chakra-ui/react";
+
 export default function Home({ sectionData }) {
   return (
-    <div>
-      {/* create a components for image cards */}
-
+    <Box
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+      py="1.5rem"
+      pt="22vh"
+    >
       {sectionData.hits.map((obj) => {
-        // eslint-disable-next-line @next/next/no-img-element
-        return <img src={obj.largeImageURL} alt={obj.tag} key={obj.id} />;
+        return <ImageCard obj={obj} key={obj.id} />;
       })}
-    </div>
+    </Box>
   );
 }
 
